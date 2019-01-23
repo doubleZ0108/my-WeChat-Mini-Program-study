@@ -1,0 +1,15 @@
+double Z demo...
+<button
+  type="default"
+  hover-class="other-button-hover"
+>
+  default
+</button>
+<button
+  type="primary"
+  bindtap='btnClick'
+>
+  {{btnText}}
+</button>
+
+<text>{{text}}</text>
