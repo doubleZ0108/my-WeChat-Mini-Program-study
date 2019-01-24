@@ -5,7 +5,9 @@ Page({
    */
   data: {
     text : "这里是内容",
-    btnText : "这是按钮的内容"
+    btnText : "这是按钮的内容",
+    show : true,
+    news: ['aaa', 'bbb', 'ccc', 'ddd'],   //数组的定义方式
   },
 
   /**
@@ -65,8 +67,12 @@ Page({
   },
 
   btnClick:function(){
-    console.log("按钮被点击了")
+    var isShow = this.data.show;
+    console.log("isShow: "+isShow)  //调试信息输出变量的值
 
-    this.setData({text:"这是一个新的内容..."})
+    var newsdata = this.data.news;
+    newsdata.shift()      //shift()可删除数组中的第一项
+
+    this.setData({text:"这是一个新的内容...",show:!isShow, news:newsdata})  //更改data里的值
   }
 })
