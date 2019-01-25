@@ -1,2 +1,2 @@
 <!--pages/article/article.wxml-->
-<text>文章详情...</text>
+<text>文章详情...  {{text}}</text>

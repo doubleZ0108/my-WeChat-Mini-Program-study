@@ -65,12 +65,12 @@ Page({
   },
   article1Click:function(){
     wx.navigateTo({
-      url: '../article/article',    //之前的页面只是被挂起,还可以返回
+      url: '../article/article?id=1',    //之前的页面只是被挂起,还可以返回
     })
   },
   article2Click:function(){
     wx.redirectTo({
-      url: '../article/article',    //之前的页面会被释放
+      url: '../firstPage/first',    //之前的页面会被释放
     })
   }
 })
