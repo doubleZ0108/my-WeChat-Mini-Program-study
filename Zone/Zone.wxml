@@ -1,0 +1,17 @@
+<view class="section">
+
+  <input placeholder="请输入区号" focus="{{focus}}" bindinput='getInput' />
+
+  <button type="primary" bindtap='bntClick'>
+  查询
+  </button>
+
+
+     <scroll-view scroll-y style="height: 200px;">
+        <view wx:if="{{!show | expressInfo.result!=null}}">
+           <view  wx:for="{{expressInfo.result}}">{{item.area}}  {{item.city}}  {{item.province}}</view>
+        </view>
+        <view wx:else>未查询到该区号</view>
+    </scroll-view>
+
+</view>
