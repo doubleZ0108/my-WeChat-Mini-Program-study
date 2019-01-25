@@ -1,0 +1,13 @@
+<view class="container">
+  <view bindtap="article1Click">
+    <text>文章一</text>
+  </view>
+  
+  <view bindtap='article2Click'>
+    <text>文章二</text>
+  </view>
+
+  <view>
+    <text>文章三</text>
+  </view>
+</view>
