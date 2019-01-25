@@ -7,7 +7,7 @@
     <text>文章二</text>
   </view>
 
-  <navigator url='../article/article?id=3'>
+  <navigator url='../article/article?id=3&title=标题3'>
   <view>
     <text>文章三</text>
   </view>
