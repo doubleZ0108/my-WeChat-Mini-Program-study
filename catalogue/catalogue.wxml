@@ -7,7 +7,16 @@
     <text>文章二</text>
   </view>
 
+  <navigator url='../article/article?id=3'>
   <view>
     <text>文章三</text>
   </view>
+  </navigator>
+
+  <navigator url='../article/article?id=4' redirect>
+  <view>
+    <text>文章四</text>
+  </view>
+  </navigator>
+
 </view>
