@@ -1,0 +1,24 @@
+<view class='container'>
+  
+  <view class="logo">
+  <image src='/image/logo.jpg' mode='aspectFit'></image>
+  </view>
+
+  <view class='username'>
+    <input placeholder="请输入用户名" bindinput='userNameInput'/>
+  </view>
+
+  <text>\n</text>
+
+  <view class='password'>
+    <input placeholder="请输入密码" password='true' />
+  </view>
+
+  <view class='loginbutton'>
+    <text>\n</text>
+    <button type='primary' bindtap='bntClick'>
+    登陆
+    </button>
+  </view>
+
+</view>

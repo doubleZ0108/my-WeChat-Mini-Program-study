@@ -1,0 +1,10 @@
+/* pages/login/login.wxss */
+.logo{
+   display: flex;
+}
+.username{
+  border: 1px solid silver;
+}
+.password{
+  border: 1px solid silver;
+}
