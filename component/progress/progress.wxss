@@ -1,0 +1,9 @@
+/* pages/progress/progress.wxss */
+progress{
+  width: 100%;
+  margin: 10px 0 10px 0;
+}
+image{
+  height: 50%;
+  width: 50%;
+}
