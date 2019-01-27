@@ -1,5 +1,5 @@
 <view class='container'>
   <block wx:for="{{icons}}">
-    <icon type="{{item}}" size="40" color='red'/>
+    <icon type="{{item}}" size="40" color='{{color}}' bindtap='iconClick'/>
   </block>
 </view>

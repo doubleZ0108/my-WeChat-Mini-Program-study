@@ -7,62 +7,25 @@ Page({
   data: {
     icons:[
       'success', 'success_no_circle', 'info', 'warn', 'waiting', 'cancel', 'download', 'search', 'clear'
-    ]
+    ],
+    color:"green"
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  iconClick:function(){
+    this.setData({ color: this.randcolor()})
   },
+  randcolor:function(){
+    /*第一种产生随机颜色的方法*/
+    //return '#' + Math.floor(Math.random() * 256).toString(10)
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
+    /*第二种产生随机颜色的方法*/
+    //return '#' + Math.floor(Math.random() * 0xffffff).toString(16);
 
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+    /*第三种产生随机颜色的方法*/
+    var r = Math.floor(Math.random() * 256);
+    var g = Math.floor(Math.random() * 256);
+    var b = Math.floor(Math.random() * 256);
+    console.log(r+' '+g+' '+b)
+    return "rgb(" + r + ',' + g + ',' + b + ")";
   }
 })
