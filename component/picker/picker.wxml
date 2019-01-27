@@ -1,0 +1,21 @@
+<view class='section'>
+
+  <view class='timepicker'>
+    <picker mode='time' value='{{time}}' bindchange='timechange'>
+      <view class='picker'>选择的时间是: {{time}}</view>
+    </picker>
+  </view>
+
+  <view class='datapicker'>
+    <picker mode='date' value='{{data}}' bindchange='datechange'>
+      <view class='picker'>选择的日期是: {{date}}</view>
+    </picker>
+  </view>
+
+  <view class='regionpicker'>
+    <picker mode='region' value='{{region}}' bindchange='regionchange'>
+      <view class='picker'>选择的地区是: {{region}}</view>
+    </picker>
+  </view>
+
+</view>
