@@ -1,0 +1,6 @@
+<view class='container'>
+  <text>{{text}}</text>
+
+  <button type='primary' bindtap='addline'>add line</button>
+  <button type='primary' bindtap='removeline'>remove line</button>
+</view>
