@@ -1,0 +1,11 @@
+<view class='container'>
+
+  <button bindtap='click'>按钮</button>
+
+  <modal title='标题' confirm-text='确定' cancel-text='取消' hidden='{{hide}}' bindconfirm='confirm' bindcancel='cancel'>
+  这里是对话框中的内容
+  </modal>
+
+
+  <text>{{text}}</text>
+</view>
