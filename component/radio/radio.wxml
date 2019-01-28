@@ -1,0 +1,12 @@
+<view class='section'>
+
+  <radio-group bindchange='radiogroupchange'>
+    <label wx:for="{{item}}">
+      <radio value='{{item.name}}' checked='{{item.checked}}'/>
+      {{item.value}}
+    </label>
+  </radio-group>
+
+  <text>{{text}}</text>
+  
+</view>
