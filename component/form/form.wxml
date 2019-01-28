@@ -1,0 +1,14 @@
+<view class='container'>
+
+  <form bindsubmit='submitClick' bindreset='resetClick'>
+    <input name='input' placeholder='请输入内容' style='border: 1px solid silver;'/>
+
+    <slider name='slider' show-value />
+
+    <switch name='switch' color='pink'/>
+
+    <button form-type='submit' type='primary' style='margin:5px'>点击进行上传</button>
+    <button form-type='reset' type='warn' style='margin:5px'>点击进行重置</button>
+  </form>
+
+</view>
