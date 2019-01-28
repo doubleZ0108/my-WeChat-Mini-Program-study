@@ -1,0 +1,15 @@
+<view class='container'>
+
+  <button bindtap='click'>按钮</button>
+
+  <action-sheet hidden="{{hide}}" bindchange="change">
+    <action-sheet-item data-name='item1' data-num='1' bindtap='itemClick'>item1</action-sheet-item>
+    <action-sheet-item data-name='item2' data-num='2'  bindtap='itemClick'>item2</action-sheet-item>
+    <action-sheet-item data-name='item3' data-num='3'  bindtap='itemClick'>item3</action-sheet-item>
+
+    <action-sheet-cancel>取消</action-sheet-cancel>
+  </action-sheet>
+
+
+  <text>{{text}}</text>
+</view>
