@@ -1,0 +1,10 @@
+<view class='container'>
+
+  <button bindtap='click' type='primary'>按钮</button>
+
+  <loading hidden='{{hide}}'>
+  默认
+  </loading>
+
+  
+</view>
