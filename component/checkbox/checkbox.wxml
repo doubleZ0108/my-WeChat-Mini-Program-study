@@ -1,0 +1,12 @@
+<view class='section'>
+
+  <checkbox-group bindchange='checkgroupchange'>
+    <label wx:for="{{item}}">
+      <checkbox value='{{item.name}}' checked='{{item.checked}}'/>
+      {{item.value}}
+    </label>
+  </checkbox-group>
+
+  <text>{{text}}</text>
+  
+</view>
