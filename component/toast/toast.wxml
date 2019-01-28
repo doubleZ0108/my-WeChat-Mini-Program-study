@@ -1,0 +1,10 @@
+<view class='container'>
+
+  <button bindtap='click' type='primary'>按钮</button>
+
+  <toast hidden='{{hide}}' duration='1000' bindchange='change'>
+  默认
+  </toast>
+
+  
+</view>
