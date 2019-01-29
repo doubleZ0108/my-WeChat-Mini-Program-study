@@ -1,0 +1,52 @@
+<view class='container'>
+
+  <view class='selection'>
+    <swiper indicator-dots autoplay circular
+      interval="3000" duration="1000" style='height:220px'>
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" style='width:100%'/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class='selection'>
+    <!--在wxss中设置了左边的小竖线  后一部分是设置对齐方式-->
+    <view class='header'>
+      <!--其中decode部分和&部分是用来加开头的空格的-->
+      <text decode='{{true}}'>&nbsp;精品推荐</text>
+
+      <text class='text-all'>全部精品</text>
+    </view>
+
+    <view class='content'>
+      <view class='content-item' wx:for="{{contentItem}}" wx:for-item='item'>
+        <image src='{{item.imagesrc}}' />
+        <view class='content-item-text'>
+          <text>{{item.text}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='selection'>
+    <view class='header'>
+      <text decode='{{true}}'>&nbsp;热门评测</text>
+      <text class='text-all'>全部评测</text>
+    </view>
+
+    <view class='list-item' wx:for='{{listItem}}' wx:for-item='item'>
+      <view class='list-item-images'>
+        <image src='{{item.imagesrc}}' class='list-item-images-img'/>
+        <image src='{{item.avatar}}' class='avatar' />
+      </view>
+
+      <view class='list-item-text'>
+        <text class='list-item-text-title'>{{item.text.title}}</text>
+        <text class='list-item-text-content'>\n{{item.text.content}}</text>
+      </view>
+    </view>
+  </view>
+
+</view>
