@@ -1,0 +1,48 @@
+<view class='container'>
+
+  <!--顶部幻灯片-->
+  <view class='selection'>
+    <swiper class='selection-swiper'
+    indicator-dots autoplay circular
+    interval="3000" duration="1000"
+    style='width:100%;height:210px;'>
+      <block wx:for="{{swiperImages}}">
+        <swiper-item>
+          <image src='{{item}}' style='width:100%' />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <!---->
+  <view class='selection'>
+
+    <view class='information'>
+      <image class='imformation-horn' src='../../images/horn.png'/>
+
+      <swiper class='information-swiper'
+      autoplay circular vertical
+      interval="3000" duration="1000">
+        <block wx:for="{{informationText}}">
+          <swiper-item>
+            <text class='information-swiper-text'>{{item}}</text>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+  </view>
+
+  <view class='selection'>
+    <view class='coupon'>
+      <image src='../../images/coupon.png'/>
+
+      <view class='coupon-text'>
+        <text class='coupon-text-money'>{{couponText.money}}</text>
+        
+      </view>
+    </view>
+  </view>
+
+
+</view>

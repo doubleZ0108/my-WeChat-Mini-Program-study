@@ -1,0 +1,55 @@
+.container{
+  /*去掉最上面的空白部分*/
+  padding: 0rpx;
+}
+
+.selection{
+  width: 100%;
+}
+.information{
+  background-color: rgb(231, 218, 203);
+  height: 25px;
+  position: flex;
+}
+.imformation-horn{
+  position: absolute;
+
+  padding-left: 5px;
+  padding-top: 2.5px;
+  height: 20px;
+  width: 20px;
+}
+.information-swiper{
+  position: absolute;
+
+  height: 25px;
+  width: 100%;
+}
+.information-swiper-text{
+  position: absolute;
+
+  padding-left: 30px;
+  padding-top: 2px;
+  font-size: 15px;
+}
+
+.coupon{
+  height: 120px;
+  
+  /*两部曲让图片居中显示*/
+  display: flex;
+  justify-content: center;  
+}
+.coupon image{
+  position: relative;
+
+  height: 100%;
+  width: 60%;
+}
+.coupon-text{
+  position: absolute;
+}
+.coupon-text-money{
+  padding-left: 0px;
+  font-size: 50px;
+}
