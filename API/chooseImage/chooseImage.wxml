@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container" style='padding:0rpx;'>
+  
+  <button style='background-color:pink;color:white;' bindtap='btnClick'>
+  选择照片
+  </button>
+
+  <view wx:for='{{photoUrl}}' wx:for-item='item'>
+    <image src='{{item}}' />
+  </view>
+  
+</view>
