@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container" style='padding:0rpx;'>
+  
+  <button style='background-color:pink;color:white;' bindtap='btnClick'>
+  选择照片
+  </button>
+
+
+  <action-sheet hidden="{{hide}}" bindchange="change">
+    <action-sheet-item data-name='album' bindtap='itemClick'>系统相册</action-sheet-item>
+    <action-sheet-item data-name='camera'  bindtap='itemClick'>拍照</action-sheet-item>
+
+    <action-sheet-cancel>取消</action-sheet-cancel>
+  </action-sheet>
+
+
+  <view wx:for='{{photoUrl}}' wx:for-item='item'>
+    <image src='{{item}}' />
+  </view>
+  
+</view>
