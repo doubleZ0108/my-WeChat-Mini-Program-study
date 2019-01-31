@@ -1,0 +1,9 @@
+<view class='container'>
+
+  <button bindtap='addcontactClick'>添加联系人</button>
+
+  <button bindtap='clipboardClick'>获取剪贴板</button>
+    <text>{{clipboard_text}}</text>
+
+  <button bindtap='phonecallClick'>拨打电话</button>
+</view>
