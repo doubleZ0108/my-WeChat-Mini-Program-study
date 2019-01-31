@@ -1,0 +1,9 @@
+<view class='container'>
+
+  <button bindtap='openClick'>打开当前位置</button>
+  <button bindtap='chooseClick'>选择位置</button>
+
+  <text>name: {{text.name}}</text>
+  <text>address: {{text.address}}</text>
+  
+</view>
