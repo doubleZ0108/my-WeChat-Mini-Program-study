@@ -1,0 +1,7 @@
+<view class='container'>
+
+  <button bindtap='playBtnClick'>播放音乐</button>
+  <button bindtap='pauseBtnClick'>暂停音乐</button>
+  <button bindtap='stopBtnClick'>停止音乐</button>
+  
+</view>
