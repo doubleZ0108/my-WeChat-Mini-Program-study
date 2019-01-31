@@ -1,0 +1,9 @@
+<view class='container'>
+
+  <button bindtap='getClick'>获取缓存数据</button>
+  <text>{{text}}</text>
+
+  <button bindtap='removeClick'>清除缓存数据</button>
+  <button bindtap='clearClick'>清除所有缓存数据</button>
+
+</view>
