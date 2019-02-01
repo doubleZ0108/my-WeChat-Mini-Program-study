@@ -1,0 +1,7 @@
+<view class='container'>
+
+  <image src='../../images/tongji.png' mode='aspectFit'
+  bindtap='imageClick'
+  animation='{{animationData}}' />
+
+</view>
