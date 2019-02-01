@@ -1,0 +1,11 @@
+<view class='container'>
+
+  <button bindtap='toastClick'>消息提示框</button>
+
+  <button bindtap='modalClick'>对话框</button>
+
+  <button bindtap='loadingClick'>loading提示框</button>
+
+  <button bindtap='actionsheetClick'>操作菜单</button>
+
+</view>
