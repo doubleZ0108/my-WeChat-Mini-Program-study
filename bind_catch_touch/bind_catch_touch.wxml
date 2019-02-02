@@ -1,0 +1,14 @@
+<view class='container'>
+
+  <button type='primary' 
+  catchtouchstart='btnTouchStart' catchtouchmove='btnTouchMove' catchtouchend='btnTouchEnd'>测试按钮     </button>
+
+  <text>{{text}}</text>
+
+
+  <view class='bottom' catchtap='bottomClick'></view>
+  <view class='middle' catchtap='middleClick'></view>
+  <view class='top' catchtap='topClick'></view>
+
+
+</view>
