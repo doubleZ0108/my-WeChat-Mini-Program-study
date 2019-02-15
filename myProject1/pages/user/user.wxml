@@ -1,0 +1,13 @@
+<view class='container'>
+
+  <input placeholder='请输入用户名' bindinput="usernameInput" />
+  <input placeholder='请输入密码' password="{{true}}" bindinput="passwordInput" />
+
+  <text>{{username}}</text>
+  <text>{{password}}</text>
+
+  <navigator url='../welcome/welcome?username={{username}}'>
+    <button class='login-button' type='primary' bindtap='btnClick'>登陆</button>
+  </navigator>
+
+</view>

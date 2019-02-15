@@ -1,0 +1,7 @@
+<view class='container'>
+
+  <image src='../../images/welcome.jpg' mode='aspectFit'/>
+  
+  <text>欢迎登陆 {{username}}</text>
+
+</view>
